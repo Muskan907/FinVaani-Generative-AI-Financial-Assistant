@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv/
+venv/
+
+# Model checkpoints (large files)
+models/lora_finetuned/
+models/pruned_round_*/
+models/winning_ticket/
+
+# Data
+data/database/project.db
+
+# Results (regenerate from scripts)
+results/plots/
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# macOS
+.DS_Store

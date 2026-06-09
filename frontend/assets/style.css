@@ -1,0 +1,73 @@
+/* FinVaani — Global Design System */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap');
+
+:root {
+    --primary:    #FF6B35;
+    --secondary:  #1B4332;
+    --accent:     #FFD700;
+    --bg:         #FAFAF8;
+    --card-bg:    #FFFFFF;
+    --text:       #1A1A1A;
+    --text-muted: #6B7280;
+    --radius-card: 12px;
+    --radius-btn:  8px;
+    --shadow:      0 2px 12px rgba(0,0,0,0.08);
+}
+
+html, body, [class*="css"] {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+
+/* Cards */
+.finvaani-card {
+    background: var(--card-bg);
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Chat bubbles */
+.chat-user {
+    background: var(--primary);
+    color: white;
+    border-radius: 18px 18px 4px 18px;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    max-width: 75%;
+    margin-left: auto;
+    text-align: right;
+}
+.chat-bot {
+    background: var(--card-bg);
+    border: 1px solid #E5E7EB;
+    border-radius: 18px 18px 18px 4px;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    max-width: 80%;
+    box-shadow: var(--shadow);
+}
+
+/* Badges */
+.badge-baseline  { background:#9E9E9E; color:white; padding:2px 8px; border-radius:12px; font-size:0.75rem; }
+.badge-fewshot   { background:#2196F3; color:white; padding:2px 8px; border-radius:12px; font-size:0.75rem; }
+.badge-finetuned { background:#4CAF50; color:white; padding:2px 8px; border-radius:12px; font-size:0.75rem; }
+.badge-compressed{ background:#FFD700; color:#1A1A1A; padding:2px 8px; border-radius:12px; font-size:0.75rem; }
+
+/* Metric cards */
+.metric-value { font-size: 2rem; font-weight: 700; color: var(--primary); }
+.metric-label { font-size: 0.85rem; color: var(--text-muted); }
+
+/* Sidebar */
+.sidebar-badge {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
